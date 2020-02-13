@@ -1,0 +1,265 @@
+.container-sup {
+	margin-top: 65px;
+	width: 100%;
+	height: 350px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	h3 {
+		font-size: 32px;
+		align-items: center;
+		text-align: center;
+	}
+
+	.men-main-pic-container{
+		min-width: 100%;
+		width: 100%;
+		height: 100%;
+		background-image: url(../ressources/img/main-pic-men.png);
+		background-size: cover;
+		position: relative;
+
+		.men-main-pic-container-txt {
+			color: rgb(34, 34, 34);
+			width: 20%;
+			height: 85px;
+			padding: 15px;
+			background-color: white;
+			border-radius: 2px;
+			position: relative;
+			top: 205px;
+			left: 10%;
+			box-sizing: border-box;
+			display: block;
+
+			.men-main-pic-txt {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+		}
+		.index-men-main-pic-container-txt {
+			@extend .men-main-pic-container-txt;
+			height: 75px;
+			width: 20%;
+			top: 235px;
+		}
+	}
+
+	#women-main-pic-container {
+		min-width: 100%;
+		width: 100%;
+		height: 100%;
+		background-image: url(../ressources/img/main-pic-women.png);
+		background-size: cover;
+		position: relative;
+
+		.women-main-pic-container-txt {
+			color: rgb(34, 34, 34);
+			width: 15%;
+			height: 85px;
+			padding: 15px;
+			background-color: white;
+			border-radius: 2px;
+			position: relative;
+			top: 205px;
+			left: 10%;
+			box-sizing: border-box;
+			display: block;
+
+			.women-main-pic-txt {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	.index-women-main-pic-container-txt {
+		color: rgb(34, 34, 34);
+		padding: 15px;
+		background-color: white;
+		border-radius: 2px;
+		position: relative;
+		left: 10%;
+		box-sizing: border-box;
+		display: block;
+		height: 75px;
+		width: 20%;
+		top: 235px;
+
+		.women-main-pic-txt {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+.index-main-pic-container {
+	background-size: cover;
+	position: relative;
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	background-image: url(../ressources/img/personal-shopper-img.jpg) !important;
+
+	.men-main-pic-container-txt {
+		color: rgb(34, 34, 34);
+		width: 25%;
+		height: 105px;
+		padding: 20px;
+		background-color: white;
+		border-radius: 2px;
+		position: relative;
+		top: 205px;
+		left: 10%;
+		box-sizing: border-box;
+		display: block;
+
+		.men-main-pic-txt {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+		}
+	}
+}
+
+//       .men-main-pic-txt {
+//         width: 100%;
+//         height: 100%;
+//         justify-content: left;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 850px) and (max-width: 1000px) {
+// 	.container-sup {
+// 		margin-top: 65px;
+// 		width: 100%;
+//     height: 250px;
+
+// 		#women-main-pic-container {
+// 			.women-main-pic-container-txt {
+// 				top: 60px;
+// 				width: 30%;
+// 				height: 40%;
+// 			}
+// 		}
+//     .men-main-pic-container{
+// 		.men-main-pic-container-txt {
+// 			top: 200px;
+// 			width: 30%;
+// 			height: 40%;
+//     }
+//   }
+// 	}
+
+// 	.index-main-pic-container {
+// 		.men-main-pic-container-txt {
+// 			width: 40%;
+// 			height: 110px;
+// 			top: 60px;
+// 		}
+// 	}
+// }
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+	.container-sup {
+		margin-top: 65px;
+		width: 100%;
+		height: 250px;
+
+		.men-main-pic-container{
+			.men-main-pic-container-txt {
+				top: 145px;
+				width: 32%;
+				height: 30%;
+			}
+		}
+		#women-main-pic-container {
+			.women-main-pic-container-txt {
+				top: 145px;
+				width: 30%;
+				height: 30%;
+			}
+		}
+
+		.index-women-main-pic-container-txt {
+			top: 145px;
+			width: 30%;
+			height: 30%;
+		}
+
+		.index-main-pic-container {
+			.men-main-pic-container-txt {
+				width: 40%;
+				height: 50%;
+				top: 110px;
+			}
+		}
+	}
+}
+
+// .index-main-pic-container {
+//   .men-main-pic-container-txt {
+//     width: 40%;
+//     height: 110px;
+//   }
+// }
+
+@media screen and (max-width: 540px) {
+	.container-sup {
+		margin-top: 65px;
+		width: 100%;
+		height: 250px;
+
+		.men-main-pic-container {
+			.men-main-pic-container-txt {
+				top: 110px;
+				width: 65%;
+				height: 40%;
+			}
+		}
+		#women-main-pic-container {
+			.women-main-pic-container-txt {
+				top: 110px;
+				width: 65%;
+				height: 40%;
+			}
+		}
+
+		.index-women-main-pic-container-txt {
+			top: 110px;
+			width: 65%;
+			height: 40%;
+		}
+
+		.index-main-pic-container {
+			.men-main-pic-container-txt {
+				top: 110px;
+				width: 65%;
+				height: 110px;
+			}
+		}
+	}
+
+	// .index-main-pic-container {
+	// 	.men-main-pic-container-txt {
+	// 		width: 50% !important;
+	// 		height: 110px;
+	// 	}
+	// }
+	// .men-main-pic-container-txt,
+	// .women-main-pic-container-txt {
+	// 	top: 110px;
+	// 	width: 40%;
+	// 	height: 40%;
+	// }
+}

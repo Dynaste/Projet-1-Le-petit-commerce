@@ -1,0 +1,201 @@
+.title-page-shop {
+  margin-top: 95px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 28px;
+  }
+}
+.container-product-miniature {
+  margin-top: 50px !important;
+  margin-bottom: 10px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .product-card-miniature {
+    width: 250px;
+    height: 450px;
+    transition: 0.4s;
+    margin-bottom: 15px;
+    position: relative;
+    border-radius: 4px;
+
+    &:hover {
+      box-shadow: 4px 4px 15px -1px rgba(107, 107, 107, 1);
+      transition: 0.4s;
+      border-radius: 4px;
+      padding: 10px;
+    }
+
+    span {
+      font-size: 14px;
+      color: #bbb;
+      position: absolute;
+      bottom: 2px;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+    .favori-add-button {
+      // position: absolute;
+      // right: 25px;
+      // top: 65px;
+      font-size: 24px;
+      i {
+        color: #bbb;
+        transition: 0.6s;
+        &:hover {
+          color: #c23616;
+          transition: 0.6s;
+          cursor: pointer;
+        }
+      }
+    }
+    .active-favori {
+      i {
+        color: #c23616;
+      }
+    }
+    p {
+      font-size: 16px;
+      color: rgb(46, 46, 84);
+    }
+
+    .product-picture-miniature {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+    .product-info-miniature {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 10%;
+      margin-top: 10px;
+
+      .product-price-miniature {
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        height: 100%;
+        padding-right: 2px;
+      }
+
+      .product-buy-miniature {
+        height: 80%;
+        width: 80%;
+        margin-left: auto;
+        border: 1px solid $main-color;
+        padding: 2px 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2px;
+        font-size: 20px;
+        color: white;
+        background-image: linear-gradient(90deg, transparent, rgb(62, 56, 75));
+        background-color: rgba(46, 46, 84, 1);
+        transition: background-color 0.4s;
+        &:hover {
+          background-color: rgba(38, 86, 96, 1);
+        }
+      }
+      .product-price-miniature-panier {
+        font-size: 20px;
+        width: 35%;
+        height: 100%;
+        padding-right: 2px;
+
+        span {
+          font-size: 14px;
+          color: #bbb;
+        }
+      }
+      .product-buy-miniature-panier {
+        @extend .product-buy-miniature;
+        width: 50%;
+        margin-top: 10px;
+      }
+    }
+  }
+  
+}
+
+@media screen and (min-width: 475px) and (max-width: 660px) {
+  .container-product-miniature {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+
+    .product-card-miniature {
+      margin-top: 10px;
+      width: 80%;
+      height: 82vh;
+
+      .product-picture-miniature {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .container-product-miniature {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  .product-card-miniature {
+    width: 80%;
+    height: 70vh;
+  }
+}
+}
+
+
+.product-buy-panier {
+  height: 80%;
+  width: 85px;
+  border: 1px solid $main-color;
+  padding: 2px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  font-size: 20px;
+  color: white;
+  background-image: linear-gradient(90deg, transparent, rgb(62, 56, 75));
+  background-color: rgba(46, 46, 84, 1);
+  transition: background-color 0.4s;
+  margin-top: 4px;
+  margin-left: 15px;
+  &:hover {
+    background-color: rgba(38, 86, 96, 1);
+  }
+}
+
+
